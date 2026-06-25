@@ -42,3 +42,7 @@ button {
   padding: 0px;
   margin: 0px;
 }
+
+.navbar-brand img {
+  padding: 10px;
+}
