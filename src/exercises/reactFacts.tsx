@@ -1,7 +1,11 @@
 function Logo() {
   return (
     <div>
-      <img className="facts-logo" src="/src/assets/react.svg" alt="" />
+      <img
+        className="facts-logo"
+        src="/src/assets/react.svg"
+        alt="React Logo"
+      />
     </div>
   );
 }
@@ -25,12 +29,17 @@ function List() {
   );
 }
 
+function Footer() {
+  return <small>© 2026 SEV development. All rights reserved.</small>;
+}
+
 export default function App() {
   return (
     <div>
       <Logo />
       <Header />
       <List />
+      <Footer />
     </div>
   );
 }
