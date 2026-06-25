@@ -1,18 +1,25 @@
-function Logo() {
+function NavBar() {
   return (
-    <div>
+    <header className="facts-header">
       <img
         className="facts-logo"
         src="/src/assets/react.svg"
         alt="React Logo"
       />
-    </div>
+      <nav>
+        <ul className="nav-list">
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 
 function Header() {
   return (
-    <header className="facts-header">
+    <header className="facts-heading">
       <h1>Fun facts about react</h1>
     </header>
   );
@@ -30,13 +37,17 @@ function List() {
 }
 
 function Footer() {
-  return <small>© 2026 SEV development. All rights reserved.</small>;
+  return (
+    <small className="facts-footer">
+      © 2026 <span className="sev">SEV</span> development. All rights reserved.
+    </small>
+  );
 }
 
 export default function App() {
   return (
     <div>
-      <Logo />
+      <NavBar />
       <Header />
       <List />
       <Footer />

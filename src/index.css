@@ -42,13 +42,14 @@ button {
 }
 
 .facts-logo {
-  width: 150px;
-  height: 150px;
-  padding: 2rem;
+  width: 55px;
+  padding: 2px;
+  margin-left: 20px;
+  margin-top: 20px;
   margin-bottom: 1rem;
 }
 
-.facts-header h1 {
+.facts-heading h1 {
   padding-left: 20px;
   color: white;
 }
@@ -61,4 +62,40 @@ button {
   margin-top: 0;
   padding-top: 0px;
   margin-left: 30px;
+}
+
+.facts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.nav-list li:hover {
+  color: aqua;
+}
+
+.facts-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  text-align: center;
+
+  padding: 20px;
+}
+
+.sev:hover {
+  color: crimson;
 }

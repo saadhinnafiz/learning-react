@@ -70,19 +70,29 @@ function MyAwesomeNavbar() {
           <ul className="navbar-nav me-auto mb-2 mb-sm-0">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
-                Home
+                Dashboard
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="https://github.com/saadhinnafiz"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Profile
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Link
+                Student Portal
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link disabled" aria-disabled="true">
                 Disabled
               </a>
-            </li>
+            </li> */}
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -90,22 +100,22 @@ function MyAwesomeNavbar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Helpdesk
               </a>
               <ul className="dropdown-menu">
                 <li>
                   <a className="dropdown-item" href="#">
-                    Action
+                    Submit New Request
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Another action
+                    Open Requests
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Something else here
+                    Closed Requests
                   </a>
                 </li>
               </ul>
