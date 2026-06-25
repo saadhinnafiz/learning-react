@@ -1,3 +1,3 @@
-import Exercise from "./exercises/basics";
+import Exercise from "./exercises/reactFacts";
 
 export default Exercise;
