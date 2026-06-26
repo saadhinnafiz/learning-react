@@ -5,7 +5,9 @@ function Header() {
 function List() {
   return (
     <ul>
-      <li>Lorem ipsum dolor sit amet.</li>
+      <li>
+        <a href="https://fonts.google.com/"></a>Lorem ipsum dolor sit amet.
+      </li>
       <li>Lorem ipsum dolor sit.</li>
       <li>Lorem ipsum dolor sit amet.</li>
     </ul>
