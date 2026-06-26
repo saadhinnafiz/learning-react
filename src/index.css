@@ -136,3 +136,94 @@ button {
 .navbar-brand img {
   padding: 10px;
 }
+
+/*business card project*/
+
+.card-container {
+  border: 1px solid rgba(93, 92, 92, 0.646);
+  border-radius: 18px;
+  box-shadow: 5px 5px 5px rgba(69, 69, 69, 0.306);
+  background-color: #21222a;
+  padding: 20px;
+  margin: 10px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.card-avatar img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.card-name {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.card-job {
+  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
+  color: #61dafb;
+}
+
+.card-content {
+  color: grey;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #61dafb;
+}
+.social-links a:hover {
+  text-decoration: none;
+  color: pink;
+}
+
+.divider {
+  border: none;
+  border-top: 2px solid rgba(130, 127, 127, 0.396);
+  margin: 1rem 3rem;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 12px;
+  padding: 1rem 2rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.card-email {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #61dafb;
+  background: transparent;
+  color: #61dafb;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.card-cv {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #61dafb;
+  color: #21222a;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}

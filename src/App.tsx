@@ -1,3 +1,3 @@
-import Exercise from "./exercises/reactFacts";
+import Exercise from "./exercises/business-card";
 
 export default Exercise;
