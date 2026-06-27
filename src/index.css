@@ -269,7 +269,8 @@ button {
 
 article.journal-entry {
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 14px;
+  margin-top: 14px;
 }
 
 .location-image-container {
@@ -291,12 +292,17 @@ article.journal-entry {
   text-transform: uppercase;
   font-size: 0.7rem;
   margin-right: 12px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 17%;
 }
 
-.travel-info-container a {
-  color: #6f6f6f;
+.google-maps-link {
+  color: #918e9b;
   font-size: 0.7rem;
   text-decoration: underline;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 200;
 }
 
 .travel-entry-title {
@@ -315,8 +321,10 @@ article.journal-entry {
 }
 
 .travel-entry-text {
+  color: #2b283a;
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
-  line-height: 1.5;
+  line-height: 150%;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;

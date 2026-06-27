@@ -7,6 +7,8 @@ export default function App() {
       <Header />
       <div className="travel-container">
         <Entry />
+        <Entry />
+        <Entry />
       </div>
     </div>
   );
