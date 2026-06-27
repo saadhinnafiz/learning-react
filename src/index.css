@@ -7,13 +7,13 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #27292c;
+  background: #ffffff;
   color: white;
 }
 
 /* ===== GLOBAL ELEMENTS ===== */
 h1 {
-  color: bisque;
+  color: black;
   padding: 20px;
 }
 
@@ -236,4 +236,31 @@ button {
 .card-email:hover,
 .card-cv:hover {
   transform: scale(1.05);
+}
+
+/*travel-journal project*/
+
+.travel-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f55a5a;
+  gap: 1px;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.travel-globe {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+.travel-heading {
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 0px;
+  padding: 10px;
 }
