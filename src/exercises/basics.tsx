@@ -135,6 +135,38 @@ function MyAwesomeNavbar() {
   );
 }
 
+const firstName = "Joe";
+const lastName = "Shmoe";
+
+const currentHour = new Date().getHours();
+const currentMinute = new Date().getMinutes();
+
+let timeOfDay: string;
+
+if (currentHour < 12) {
+  timeOfDay = "morning";
+} else if (currentHour >= 12 && currentHour < 17) {
+  timeOfDay = "afternoon";
+} else if (currentHour < 21) {
+  timeOfDay = "evening";
+} else {
+  timeOfDay = "night";
+}
+
+function LearnProps() {
+  return (
+    <div>
+      <h1>
+        Hello, {firstName} {lastName}
+      </h1>
+      <h2>Good {timeOfDay}</h2>
+      <p>
+        It is currently {currentHour}:{currentMinute}{" "}
+      </p>
+    </div>
+  );
+}
+
 export default function App() {
   return (
     <div>
@@ -145,6 +177,7 @@ export default function App() {
       <Button />
       <OtherList />
       <MyButton />
+      <LearnProps />
     </div>
   );
 }
