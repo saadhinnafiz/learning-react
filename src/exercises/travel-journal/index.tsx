@@ -1,9 +1,13 @@
-import Header from "./components/Header";
+import Header from "./components/Banner";
+import Entry from "./components/Entry";
 
 export default function App() {
   return (
     <div>
       <Header />
+      <div className="travel-container">
+        <Entry />
+      </div>
     </div>
   );
 }
