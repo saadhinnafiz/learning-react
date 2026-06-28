@@ -6,25 +6,9 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #ffffff;
+  font-family: Inter, Arial, sans-serif;
+  background: whitesmoke;
   color: black;
-}
-
-/* ===== GLOBAL ELEMENTS ===== */
-h1 {
-  color: black;
-  padding: 20px;
-}
-
-p {
-  margin-top: 10px;
-  padding: 20px;
-}
-
-ol {
-  margin: 20px;
-  padding: 20px;
 }
 
 button {
@@ -350,4 +334,102 @@ article.journal-entry {
 
 .travel-container {
   margin: 45px 40px;
+}
+
+/* Contacts Exercise */
+
+.contacts-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: whitesmoke;
+}
+
+.contacts-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  max-width: 1200px;
+  padding: 40px;
+}
+
+.contact-card {
+  width: 226px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.contact-photo-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px auto 2rem;
+  aspect-ratio: 1 / 1;
+}
+
+.contact-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.contact-number,
+.contact-email {
+  padding: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.contact-info {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.contact-phone-row,
+.contact-mail-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact-phone-row {
+  margin-bottom: 4px;
+}
+.phone-icon,
+.email-icon {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.contact-number,
+.contact-email {
+  font-size: 12px;
+  color: #2b283a;
+  align-items: center;
+}
+
+.contact-card h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-card p {
+  margin: 0;
+  padding: 0;
 }
