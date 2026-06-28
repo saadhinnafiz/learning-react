@@ -433,3 +433,11 @@ article.journal-entry {
   margin: 0;
   padding: 0;
 }
+
+.contact-name h2 {
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

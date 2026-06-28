@@ -1,14 +1,19 @@
-import contactPhoto from "../../../assets/contact-photo.jpg";
+type ContactProps = {
+  img: string;
+  name: string;
+  phone: string;
+  email: string;
+};
 
-export default function Contact() {
+export default function Contact(props: ContactProps) {
   return (
     <article className="contact-card">
       <section className="contact-photo-container">
-        <img src={contactPhoto} alt="Contact Photo" className="contact-image" />
+        <img src={props.img} alt="Contact Photo" className="contact-image" />
       </section>
       <section className="contact-info">
         <div className="contact-name">
-          <h2>Emilia Clarke</h2>
+          <h2>{props.name}</h2>
         </div>
         <div className="contact-details">
           <div className="contact-phone-row">
@@ -17,7 +22,7 @@ export default function Contact() {
               alt="image of phone icon"
               className="phone-icon"
             />
-            <p className="contact-number">(212) 555-1234</p>
+            <p className="contact-number">{props.phone}</p>
           </div>
 
           <div className="contact-mail-row">
@@ -26,7 +31,7 @@ export default function Contact() {
               alt="image of email icon"
               className="email-icon"
             />
-            <p className="contact-email">emilia@examplemail.com</p>
+            <p className="contact-email">{props.email}</p>
           </div>
         </div>
       </section>
