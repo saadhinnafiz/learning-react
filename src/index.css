@@ -469,10 +469,35 @@ article.journal-entry {
   color: #f4a261;
   font-style: italic;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .jokes-page {
   background: #13131f;
   min-height: 100vh;
   padding: 2rem;
+}
+
+.joke-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.joke-rating {
+  color: #a0a0b0;
+  font-size: 0.85rem;
+}
+
+.joke-votes {
+  color: #a0a0b0;
+  font-size: 0.85rem;
+}
+
+.fav-jokes {
+  font-size: 0.85rem;
+  color: #ffd700;
 }
