@@ -1,14 +1,23 @@
 import locationPin from "../../../assets/location.png";
 
-export default function Entry() {
+type EntryProps = {
+  img: {
+    src: string;
+    alt: string;
+  };
+  title: string;
+  country: string;
+  googleMapsLink: string;
+  dates: string;
+  text: string;
+};
+
+export default function Entry(props: EntryProps) {
   return (
     <>
       <article className="journal-entry">
         <div className="location-image-container">
-          <img
-            src="https://scrimba.com/links/travel-journal-japan-image-url"
-            alt="image of mount fuji"
-          />
+          <img src={props.img.src} alt={props.img.alt} />
         </div>
         <div className="travel-info-container">
           <div className="trvel-location-row">
@@ -17,22 +26,15 @@ export default function Entry() {
               alt="map marker pin"
               className="map-marker"
             />
-            <span className="travel-country">Japan</span>
-            <a
-              href="https://www.google.com/maps/place/Mount+Fuji/@35.3606421,138.7170637,15z/data=!3m1!4b1!4m6!3m5!1s0x6019629a42fdc899:0xa6a1fcc916f3a4df!8m2!3d35.3606255!4d138.7273634!16zL20vMGNrczA?entry=ttu"
-              className="google-maps-link"
-            >
+            <span className="travel-country">{props.country}</span>
+            <a href={props.googleMapsLink} className="google-maps-link">
               View on Google Maps
             </a>
           </div>
 
-          <h2 className="travel-entry-title">Mount Fuji</h2>
-          <p className="travel-trip-dates">12 Jan, 2025 - 24 Jan, 2025</p>
-          <p className="travel-entry-text">
-            Mount Fuji is the tallest mountain in Japan, standing at 3,776
-            meters // (12,380 feet). Mount Fuji is the single most popular
-            tourist site in // Japan, for both Japanese and foreign tourists.
-          </p>
+          <h2 className="travel-entry-title">{props.title}</h2>
+          <p className="travel-trip-dates">{props.dates}</p>
+          <p className="travel-entry-text">{props.text}</p>
         </div>
       </article>
       <hr className="divider" />
