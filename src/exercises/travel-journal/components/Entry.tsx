@@ -1,7 +1,6 @@
 import locationPin from "../../../assets/location.png";
 
 type EntryProps = {
-  id: number;
   img: {
     src: string;
     alt: string;
