@@ -1,3 +1,3 @@
-import Exercise from "./exercises/travel-journal";
+import Exercise from "./exercises/jokes";
 
 export default Exercise;
