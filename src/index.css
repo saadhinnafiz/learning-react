@@ -5,10 +5,14 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: Inter, Arial, sans-serif;
-  background: whitesmoke;
-  color: black;
+  margin: 0;
+  background: #fafaf8;
 }
 
 button {
@@ -500,4 +504,88 @@ article.journal-entry {
 .fav-jokes {
   font-size: 0.85rem;
   color: #ffd700;
+}
+
+/* Chef claude project */
+
+/*Header*/
+
+.chef-header {
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow:
+    0px 1px 2px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 1.1rem;
+  height: 11.1rem;
+  justify-content: center;
+  padding: 2.4rem 1.6rem;
+  width: 100%;
+}
+
+.chef-icon {
+  width: 4.3rem;
+  height: 5.2rem;
+}
+
+.chef-title {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 6rem;
+}
+
+/* Main section*/
+
+main {
+  padding: 30px 30px 10px;
+}
+
+.ingredient-form {
+  align-items: stretch;
+  display: flex;
+  gap: 12px;
+  height: 3.8rem;
+  justify-content: center;
+}
+
+.ingredient-input-field {
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  color: #141413;
+  flex-grow: 1;
+  font-family: Inter, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  max-width: 400px;
+  min-width: 150px;
+  padding: 9px 13px;
+}
+
+.ingredient-input-field::placeholder {
+  font-family: Inter, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 2rem;
+}
+
+.ingredient-button {
+  background: #141413;
+  border-radius: 6px;
+  border: none;
+  color: #fafaf8;
+  font-family: Inter, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  height: 100%;
+  letter-spacing: 0;
+  line-height: 2rem;
+  padding: 9px 17px;
+  width: 18.3rem;
+  margin: 0;
 }
