@@ -31,6 +31,9 @@ export default function Main() {
         </button>
       </form>
       <ul>{ingredientsListItem}</ul>
+      {ingredients.length >= 3 && (
+        <p className="ready-message">Ready to get a recipe!</p>
+      )}
     </main>
   );
 }
