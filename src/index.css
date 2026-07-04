@@ -656,3 +656,57 @@ main {
   margin-right: -20px;
   z-index: 1;
 }
+
+/* Favorite Contact Exercise */
+
+.contact-card {
+  background-color: white;
+  width: 250px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  height: auto;
+}
+
+.contact-card .contact-avatar {
+  width: 100%;
+  padding: 10%;
+  padding-bottom: 0;
+}
+
+.contact-card .contact-name {
+  margin-block: 13px;
+  color: #333333;
+}
+
+.contact-card .contact-info {
+  padding: 10px;
+}
+
+.contact-card .contact-favorite {
+  width: 25px;
+  cursor: pointer;
+}
+
+.contact-card .contact-detail {
+  font-size: 0.75rem;
+  color: gray;
+  margin-block: 7px;
+}
+
+.contact-card .contact-favorite-button {
+  border: none;
+  background: transparent;
+}
+
+.contact-card .contact-favorite-button:active {
+  transform: none;
+  box-shadow: none;
+}
+
+.contact-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c4a6e;
+}
