@@ -700,6 +700,52 @@ main {
   box-shadow: none;
 }
 
+/* Recipe section */
+
+.suggested-recipe-container {
+  max-width: 59.4rem;
+  margin: 30px auto 0;
+  color: #475467;
+  font-family: Inter, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0;
+}
+
+.suggested-recipe-container h2 {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.8rem;
+  letter-spacing: 0;
+  color: #141413;
+  margin-bottom: 1.9rem;
+}
+
+.suggested-recipe-container h3 {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #141413;
+  margin-bottom: 1rem;
+}
+
+.suggested-recipe-container article p {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: 0;
+  color: #475467;
+}
+
+.suggested-recipe-container ul li,
+.suggested-recipe-container ol li {
+  margin-bottom: 0.8rem;
+}
+
 /* Counter exercise */
 
 .counter-page {
