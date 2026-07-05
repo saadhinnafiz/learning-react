@@ -1,2 +1,2 @@
-import Exercise from "./exercises/counter";
+import Exercise from "./exercises/favorite-contact";
 export default Exercise;
