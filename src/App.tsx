@@ -1,2 +1,2 @@
-import Exercise from "./exercises/chef-claude";
+import Exercise from "./exercises/meme-generator";
 export default Exercise;
