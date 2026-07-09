@@ -1,2 +1,2 @@
-import Exercise from "./exercises/window-tracker";
+import Exercise from "./exercises/tenzies";
 export default Exercise;
