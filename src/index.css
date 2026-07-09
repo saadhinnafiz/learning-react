@@ -1060,6 +1060,24 @@ main {
   align-items: center;
 }
 
+.tenzies-board h1 {
+  font-family: Inter, Sans-serif;
+  font-size: 2.54rem;
+  font-weight: 700;
+  color: #2b283a;
+  letter-spacing: -0.03em;
+}
+
+.tenzies-board p {
+  font-family: Inter, Sans-serif;
+  font-size: 1.34rem;
+  font-weight: 400;
+  color: #2b283a;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #4a4e74;
+}
+
 .dice-container {
   display: grid;
   grid-template: auto auto / repeat(5, 1fr);
