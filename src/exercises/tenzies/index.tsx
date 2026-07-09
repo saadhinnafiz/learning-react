@@ -1,18 +1,36 @@
-import { useState } from "react";
 import Die from "./components/Die";
+import { useState } from "react";
+import { nanoid } from "nanoid";
 
 export default function Tenzies() {
   function generateAllNewDice() {
-    return Array.from({ length: 10 }, () => Math.floor(Math.random() * 6) + 1);
+    return Array.from({ length: 10 }, () => ({
+      value: Math.floor(Math.random() * 6) + 1,
+      isHeld: false,
+      id: nanoid(),
+    }));
   }
   const [dice, setDice] = useState(generateAllNewDice());
 
-  const diceElements = dice.map((num, index) => (
-    <Die key={index} value={num} />
+  const diceElements = dice.map((die) => (
+    <Die
+      key={die.id}
+      value={die.value}
+      isHeld={die.isHeld}
+      holdDice={() => holdDice(die.id)}
+    />
   ));
 
   function rollDice() {
-    setDice(generateAllNewDice);
+    setDice(generateAllNewDice());
+  }
+
+  function holdDice(id: string) {
+    setDice((prevDice) =>
+      prevDice.map((die) =>
+        die.id === id ? { ...die, isHeld: !die.isHeld } : die,
+      ),
+    );
   }
 
   return (
