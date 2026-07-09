@@ -22,7 +22,11 @@ export default function Tenzies() {
   ));
 
   function rollDice() {
-    setDice(generateAllNewDice());
+    setDice((prevDice) =>
+      prevDice.map((die) =>
+        die.isHeld ? die : { ...die, value: Math.floor(Math.random() * 6) + 1 },
+      ),
+    );
   }
 
   function holdDice(id: string) {
