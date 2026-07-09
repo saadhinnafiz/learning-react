@@ -1093,3 +1093,31 @@ main {
   transform: scale(0.95);
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 }
+
+.roll-button {
+  align-items: center;
+  background-color: #5035ff;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  height: 35.84px;
+  justify-content: center;
+  margin-top: 40px;
+  opacity: 1;
+  width: 92.16px;
+}
+
+.roll-button:hover {
+  background-color: #5d16d6;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.roll-button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+}
