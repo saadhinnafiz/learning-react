@@ -74,6 +74,7 @@ export default function Tenzies() {
           onClick={rollDice}
           className="roll-button"
           aria-label={gameWon ? "Start new game" : "Roll dice"}
+          autoFocus={gameWon}
         >
           {gameWon ? "New Game" : "Roll"}
         </button>
