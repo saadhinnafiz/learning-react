@@ -1,2 +1,2 @@
-import Exercise from "./exercises/tenzies";
+import Exercise from "./exercises/assembly-endgame";
 export default Exercise;
