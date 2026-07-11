@@ -1250,3 +1250,29 @@ main {
   max-width: 350px;
   margin-bottom: 36px;
 }
+
+/* CSS for Word Component */
+
+.word {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+.word span {
+  width: 40px;
+  height: 40px;
+  background-color: #323232;
+  border-bottom: 1px solid #f9f4da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #f9f4da;
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+}
