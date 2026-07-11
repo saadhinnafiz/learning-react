@@ -1168,6 +1168,8 @@ main {
   width: 100%;
 }
 
+/*Styling for Header section*/
+
 .endgame-header {
   text-align: center;
   max-width: 352px;
@@ -1189,6 +1191,49 @@ main {
   color: #8e8e8e;
   line-height: 1.4;
 }
+
+/* Styling for Game Status */
+
+.game-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 352px;
+  border-radius: 4px;
+  padding: 6px 0;
+  margin-bottom: 20px;
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  color: #f9f4da;
+  text-align: center;
+}
+
+.game-status.won {
+  background-color: #10a95b;
+}
+
+.game-status.lost {
+  background-color: #ba2a2a;
+}
+
+.game-status.farewell {
+  background-color: #7a5ea7;
+  border: 1px dashed #323232;
+}
+
+.game-status h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.game-status p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+/* Styling for Language Chips*/
 
 .chip {
   border-radius: 3px;
