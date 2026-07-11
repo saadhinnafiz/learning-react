@@ -1166,3 +1166,19 @@ main {
 .endgame-page main h1 {
   color: white;
 }
+
+.chip {
+  border-radius: 3px;
+  padding: 4.5px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.language-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  max-width: 350px;
+  margin-bottom: 36px;
+}
