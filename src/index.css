@@ -1155,16 +1155,39 @@ main {
   background-color: #282726;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white; /* temporary styling remove once done*/
+  color: white;
 }
 
-/** temporary styling*/
-/*TODO: remove and replace with actual component and style the comp*/
+.endgame-page main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
-.endgame-page main h1 {
-  color: white;
+.endgame-header {
+  text-align: center;
+  max-width: 352px;
+  margin-bottom: 60px;
+}
+
+.endgame-header h1 {
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #f9f4da;
+  margin-bottom: 8px;
+}
+
+.endgame-header p {
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #8e8e8e;
+  line-height: 1.4;
 }
 
 .chip {

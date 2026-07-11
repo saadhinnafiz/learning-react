@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div className="header-container">
+    <div className="endgame-header">
       <h1>Assembly: Endgame</h1>
       <p>
         Guess the word in under 8 attempts to keep the programming world safe
