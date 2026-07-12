@@ -21,7 +21,7 @@ export default function App() {
         <Header />
         <GameStatus />
         <Languages />
-        <Word word={currentWord} />
+        <Word word={currentWord} guessedLetters={guessedLetters} />
         <Keyboard
           addGuessedLetter={addGuessedLetter}
           guessedLetters={guessedLetters}
