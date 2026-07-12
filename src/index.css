@@ -1288,7 +1288,7 @@ main {
   margin-bottom: 36px;
 }
 
-.keyboard-buttons button {
+.keyboard-btn {
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -1305,15 +1305,25 @@ main {
   margin: 0;
 }
 
-.keyboard-buttons button:hover {
+.keyboard-btn:hover {
   background-color: #e5a820;
 }
 
-.keyboard-buttons button:active {
+.keyboard-btn:active {
   transform: scale(0.95);
 }
 
-/*New Game Button Styling*/
+.keyboard-btn.correct {
+  background-color: #10a95b;
+  color: #f9f4da;
+}
+
+.keyboard-btn.wrong {
+  background-color: #ec5d49;
+  color: #f9f4da;
+}
+
+/* New Game Button */
 
 button.new-game {
   background-color: #11b5e5;

@@ -15,8 +15,6 @@ export default function App() {
     );
   }
 
-  console.log({ guessedLetters });
-
   return (
     <div className="endgame-page">
       <main>
@@ -24,7 +22,11 @@ export default function App() {
         <GameStatus />
         <Languages />
         <Word word={currentWord} />
-        <Keyboard addGuessedLetter={addGuessedLetter} />
+        <Keyboard
+          addGuessedLetter={addGuessedLetter}
+          guessedLetters={guessedLetters}
+          currentWord={currentWord}
+        />
         <button className="new-game">New Game</button>
       </main>
     </div>
