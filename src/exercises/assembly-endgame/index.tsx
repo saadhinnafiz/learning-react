@@ -16,6 +16,7 @@ export default function App() {
         <Languages />
         <Word word={currentWord} />
         <Keyboard />
+        <button className="new-game">New Game</button>
       </main>
     </div>
   );
