@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Languages from "./components/Languages";
 import GameStatus from "./components/GameStatus";
 import Word from "./components/Word";
+import Keyboard from "./components/Keyboard";
 
 export default function App() {
   const [currentWord, setCurrentWord] = useState("cucumber");
@@ -14,6 +15,7 @@ export default function App() {
         <GameStatus />
         <Languages />
         <Word word={currentWord} />
+        <Keyboard />
       </main>
     </div>
   );
