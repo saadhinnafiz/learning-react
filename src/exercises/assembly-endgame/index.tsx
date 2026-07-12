@@ -7,6 +7,15 @@ import Keyboard from "./components/Keyboard";
 
 export default function App() {
   const [currentWord, setCurrentWord] = useState("cucumber");
+  const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
+
+  function addGuessedLetter(letter: string) {
+    setGuessedLetters((prev) =>
+      prev.includes(letter) ? prev : [...prev, letter],
+    );
+  }
+
+  console.log({ guessedLetters });
 
   return (
     <div className="endgame-page">
@@ -15,7 +24,7 @@ export default function App() {
         <GameStatus />
         <Languages />
         <Word word={currentWord} />
-        <Keyboard />
+        <Keyboard addGuessedLetter={addGuessedLetter} />
         <button className="new-game">New Game</button>
       </main>
     </div>
