@@ -21,6 +21,13 @@ export default function App() {
     .every((letter) => guessedLetters.includes(letter));
   const isGameLost = wrongGuessCount >= languages.length - 1;
   const isGameOver = isGameWon || isGameLost;
+  //the most recently guessed letter
+  const lastGuessedLetter = guessedLetters[guessedLetters.length - 1];
+  //was that last guess wrong
+  const isLastGuessIncorrect =
+    lastGuessedLetter !== undefined && !currentWord.includes(lastGuessedLetter);
+
+  const lastLostLanguage = languages[wrongGuessCount - 1]?.name;
 
   console.log(wrongGuessCount);
 
@@ -49,7 +56,13 @@ export default function App() {
     <div className="endgame-page">
       <main>
         <Header />
-        <GameStatus isGameWon={isGameWon} isGameLost={isGameLost} />
+        <GameStatus
+          lastGuessedLetter={lastGuessedLetter}
+          isLastGuessIncorrect={isLastGuessIncorrect}
+          isGameWon={isGameWon}
+          isGameLost={isGameLost}
+          lastLostLanguage={lastLostLanguage}
+        />
         <Languages wrongGuessCount={wrongGuessCount} />
         <Word word={currentWord} guessedLetters={guessedLetters} />
         <Keyboard
