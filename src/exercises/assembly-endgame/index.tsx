@@ -43,7 +43,7 @@ export default function App() {
       <main>
         <Header />
         <GameStatus />
-        <Languages />
+        <Languages wrongGuessCount={wrongGuessCount} />
         <Word word={currentWord} guessedLetters={guessedLetters} />
         <Keyboard
           addGuessedLetter={addGuessedLetter}
