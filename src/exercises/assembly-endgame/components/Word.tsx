@@ -12,11 +12,19 @@ export default function Word(props: WordProps) {
     const isMissed = props.isGameLost && !isGuessed;
 
     return (
-      <span key={index} className={isMissed ? "missed-letter" : ""}>
+      <span
+        key={index}
+        className={isMissed ? "missed-letter" : ""}
+        aria-label={isGuessed ? letter : "blank"}
+      >
         {isGuessed || props.isGameLost ? letter.toUpperCase() : ""}
       </span>
     );
   });
 
-  return <section className="word">{letterElements}</section>;
+  return (
+    <section className="word" aria-label="Word to guess">
+      {letterElements}
+    </section>
+  );
 }

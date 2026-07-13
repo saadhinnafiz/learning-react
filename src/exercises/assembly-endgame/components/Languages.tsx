@@ -11,10 +11,17 @@ export default function Languages(props: LanguagesProps) {
       key={lang.name}
       style={{ backgroundColor: lang.backgroundColor, color: lang.color }}
       className={clsx("chip", { lost: index < props.wrongGuessCount })}
+      aria-label={
+        index < props.wrongGuessCount ? `${lang.name} eliminated` : lang.name
+      }
     >
       {lang.name}
     </span>
   ));
 
-  return <section className="language-chips">{languageElements}</section>;
+  return (
+    <section className="language-chips" aria-label="Programming languages">
+      {languageElements}
+    </section>
+  );
 }

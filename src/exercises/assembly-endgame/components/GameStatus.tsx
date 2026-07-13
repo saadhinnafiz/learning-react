@@ -15,6 +15,8 @@ export default function GameStatus(props: GameStatusProps) {
     <div>
       {props.isGameWon && <Confetti recycle={false} numberOfPieces={1000} />}
       <section
+        role="status"
+        aria-live="polite"
         className={clsx("game-status", {
           won: props.isGameWon,
           lost: props.isGameLost,

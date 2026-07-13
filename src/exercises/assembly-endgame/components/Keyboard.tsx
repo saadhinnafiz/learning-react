@@ -23,11 +23,17 @@ export default function Keyboard(props: KeyboardProps) {
         key={letter}
         className={className}
         onClick={() => props.addGuessedLetter(letter)}
+        aria-label={`Letter ${letter.toUpperCase()}`}
+        aria-disabled={isGuessed}
       >
         {letter.toUpperCase()}
       </button>
     );
   });
 
-  return <section className="keyboard-buttons">{keyboardElements}</section>;
+  return (
+    <section className="keyboard-buttons" aria-label="Keyboard">
+      {keyboardElements}
+    </section>
+  );
 }

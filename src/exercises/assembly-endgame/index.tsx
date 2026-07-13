@@ -16,21 +16,15 @@ export default function App() {
   const wrongGuessCount = guessedLetters.filter(
     (letter) => !currentWord.includes(letter),
   ).length;
-
   const isGameWon = currentWord
     .split("")
     .every((letter) => guessedLetters.includes(letter));
   const isGameLost = wrongGuessCount >= languages.length - 1;
   const isGameOver = isGameWon || isGameLost;
-  //the most recently guessed letter
   const lastGuessedLetter = guessedLetters[guessedLetters.length - 1];
-  //was that last guess wrong
   const isLastGuessIncorrect =
     lastGuessedLetter !== undefined && !currentWord.includes(lastGuessedLetter);
-
   const lastLostLanguage = languages[wrongGuessCount - 1]?.name;
-
-  console.log(wrongGuessCount);
 
   // Functions
   function addGuessedLetter(letter: string) {
@@ -39,7 +33,6 @@ export default function App() {
     );
   }
 
-  // Functions
   function startNewGame() {
     setCurrentWord(getRandomWord());
     setGuessedLetters([]);
@@ -53,7 +46,6 @@ export default function App() {
         addGuessedLetter(letter);
       }
     }
-
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [guessedLetters]);
