@@ -1292,6 +1292,10 @@ main {
   font-family: "Hanken Grotesk", Arial, sans-serif;
 }
 
+.word span.missed-letter {
+  color: #ec5d49;
+}
+
 /*Keyboard Styling*/
 
 .keyboard-buttons {

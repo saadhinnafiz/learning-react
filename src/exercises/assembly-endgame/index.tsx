@@ -71,7 +71,11 @@ export default function App() {
           lastLostLanguage={lastLostLanguage}
         />
         <Languages wrongGuessCount={wrongGuessCount} />
-        <Word word={currentWord} guessedLetters={guessedLetters} />
+        <Word
+          word={currentWord}
+          guessedLetters={guessedLetters}
+          isGameLost={isGameLost}
+        />
         {!isGameOver && (
           <Keyboard
             addGuessedLetter={addGuessedLetter}
