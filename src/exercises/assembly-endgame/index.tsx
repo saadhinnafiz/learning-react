@@ -5,10 +5,11 @@ import Languages from "./components/Languages";
 import GameStatus from "./components/GameStatus";
 import Word from "./components/Word";
 import Keyboard from "./components/Keyboard";
+import { getRandomWord } from "./utils";
 
 export default function App() {
   // State
-  const [currentWord, setCurrentWord] = useState("cucumber");
+  const [currentWord, setCurrentWord] = useState(getRandomWord);
   const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
 
   // Derived values
@@ -36,6 +37,12 @@ export default function App() {
     setGuessedLetters((prev) =>
       prev.includes(letter) ? prev : [...prev, letter],
     );
+  }
+
+  // Functions
+  function startNewGame() {
+    setCurrentWord(getRandomWord());
+    setGuessedLetters([]);
   }
 
   // Effects
@@ -70,7 +77,11 @@ export default function App() {
           guessedLetters={guessedLetters}
           currentWord={currentWord}
         />
-        {isGameOver && <button className="new-game">New Game</button>}
+        {isGameOver && (
+          <button className="new-game" onClick={startNewGame}>
+            New Game
+          </button>
+        )}
       </main>
     </div>
   );
