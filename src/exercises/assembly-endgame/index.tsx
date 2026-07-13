@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { languages } from "./languages";
 import Header from "./components/Header";
 import Languages from "./components/Languages";
 import GameStatus from "./components/GameStatus";
@@ -14,6 +15,12 @@ export default function App() {
   const wrongGuessCount = guessedLetters.filter(
     (letter) => !currentWord.includes(letter),
   ).length;
+
+  const isGameWon = currentWord
+    .split("")
+    .every((letter) => guessedLetters.includes(letter));
+  const isGameLost = wrongGuessCount >= languages.length - 1;
+  const isGameOver = isGameWon || isGameLost;
 
   console.log(wrongGuessCount);
 
@@ -42,7 +49,7 @@ export default function App() {
     <div className="endgame-page">
       <main>
         <Header />
-        <GameStatus />
+        <GameStatus isGameWon={isGameWon} isGameLost={isGameLost} />
         <Languages wrongGuessCount={wrongGuessCount} />
         <Word word={currentWord} guessedLetters={guessedLetters} />
         <Keyboard
@@ -50,7 +57,7 @@ export default function App() {
           guessedLetters={guessedLetters}
           currentWord={currentWord}
         />
-        <button className="new-game">New Game</button>
+        {isGameOver && <button className="new-game">New Game</button>}
       </main>
     </div>
   );
