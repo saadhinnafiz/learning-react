@@ -41,6 +41,7 @@ export default function App() {
   // Effects
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
+      if (isGameOver) return;
       const letter = event.key.toLowerCase();
       if (/^[a-z]$/.test(letter)) {
         addGuessedLetter(letter);
@@ -48,7 +49,7 @@ export default function App() {
     }
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [guessedLetters]);
+  }, [guessedLetters, isGameOver]);
 
   // Render
   return (
@@ -68,6 +69,26 @@ export default function App() {
           guessedLetters={guessedLetters}
           isGameLost={isGameLost}
         />
+
+        {/* Hidden section for screen readers */}
+        <section className="sr-only" aria-live="polite" role="status">
+          <p>
+            {lastGuessedLetter &&
+              (currentWord.includes(lastGuessedLetter)
+                ? `Correct! The letter ${lastGuessedLetter} is in the word.`
+                : `Wrong! The letter ${lastGuessedLetter} is not in the word.`)}
+          </p>
+          <p>
+            Current word:{" "}
+            {currentWord
+              .split("")
+              .map((letter) =>
+                guessedLetters.includes(letter) ? letter + "." : "blank.",
+              )
+              .join(" ")}
+          </p>
+        </section>
+
         {!isGameOver && (
           <Keyboard
             addGuessedLetter={addGuessedLetter}
