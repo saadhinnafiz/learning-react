@@ -72,11 +72,13 @@ export default function App() {
         />
         <Languages wrongGuessCount={wrongGuessCount} />
         <Word word={currentWord} guessedLetters={guessedLetters} />
-        <Keyboard
-          addGuessedLetter={addGuessedLetter}
-          guessedLetters={guessedLetters}
-          currentWord={currentWord}
-        />
+        {!isGameOver && (
+          <Keyboard
+            addGuessedLetter={addGuessedLetter}
+            guessedLetters={guessedLetters}
+            currentWord={currentWord}
+          />
+        )}
         {isGameOver && (
           <button className="new-game" onClick={startNewGame}>
             New Game
