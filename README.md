@@ -1,32 +1,34 @@
-# React + TypeScript + Vite
+# Learning React
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A collection of React exercises and projects built while learning React with TypeScript and Vite.
 
-Currently, two official plugins are available:
+## What's Inside
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Exercises
 
-## React Compiler
+- **Basics** — JSX, components, props
+- **Business Card** — Static component with links
+- **Contacts** — Rendering lists with `.map()`
+- **Jokes** — Props with multiple data types
+- **Travel Journal** — Data files and component composition
+- **Counter** — useState basics
+- **Favorite Contact** — useState with objects and toggle
+- **Soundpads** — State with arrays, holdDice pattern
+- **Meme Generator** — useEffect, fetch, controlled inputs
+- **Window Tracker** — useEffect with event listeners and cleanup
+- **Chef Claude** — Full app with AI integration (Anthropic API)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Capstone Projects
 
-## Expanding the Oxlint configuration
+- **Tenzies** — Dice game with win detection and confetti
+- **Assembly: Endgame** — Hangman-style word game with accessibility
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Tech Stack
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+- React 19
+- TypeScript
+- Vite
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Notes
+
+This repo contains learning exercises only. Real projects live in the `react-projects` folder.
