@@ -31,4 +31,4 @@ A collection of React exercises and projects built while learning React with Typ
 
 ## Notes
 
-This repo contains learning exercises only. Real projects live in the `react-projects` folder.
+This repo contains learning exercises only.
